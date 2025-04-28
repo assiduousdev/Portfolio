@@ -1,3 +1,103 @@
 .hero {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  align-items: center;
   min-height: 100dvh;
+}
+
+.hero section {
+  margin-inline: auto;
+  padding-inline: 3.2rem;
+}
+
+.hero h1 {
+  max-width: 115rem;
+  font-family: var(--ff-heading);
+  font-weight: 800;
+  font-size: 4.2rem;
+  text-align: center;
+  line-height: 1.1;
+  letter-spacing: 2px;
+}
+
+.hero__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 3.2rem;
+}
+
+.hero__card-img {
+  height: 8rem;
+  border-radius: 50%;
+
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  aspect-ratio: 1;
+}
+
+.hero__card-img img {
+  max-width: 100%;
+}
+
+.hero__card-description {
+  text-align: center;
+}
+
+.hero__card-description h2 {
+  font-family: var(--ff-heading);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.hero__card-description p {
+  font-size: 1.4rem;
+  font-family: var(--ff-body);
+}
+
+@media screen and (min-width: 43.75em) {
+  .hero section {
+    padding-inline: 6.4rem;
+  }
+
+  .hero h1 {
+    font-size: 6.4rem;
+  }
+
+  .hero__card {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 6.4rem;
+  }
+
+  .hero__card-img {
+    height: 10rem;
+  }
+
+  .hero__card-description {
+    text-align: left;
+  }
+
+  .hero__card-description h2 {
+    font-size: 2.4rem;
+  }
+
+  .hero__card-description p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 68.75em) {
+  .hero h1 {
+    font-size: 9.2rem;
+  }
+
+  .hero__card-description h2 {
+    font-size: 2.4rem;
+  }
+
+  .hero__card-description p {
+    font-size: 1.6rem;
+  }
 }
