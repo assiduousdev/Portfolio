@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react"
 
-import Navbar from '../Navbar/Navbar';
+import Navbar from "../Navbar/Navbar";
 
-import './Hero.css';
+import "./Hero.css";
 
 export default function Hero() {
   return (
-    <header className='hero'>
+    <header className="hero">
       <Navbar />
     </header>
   )

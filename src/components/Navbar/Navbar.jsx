@@ -1,6 +1,6 @@
-import React, { useRef } from 'react'
+import React, { useRef } from "react"
 
-import './Navbar.css';
+import "./Navbar.css";
 
 export default function Navbar() {
   // TODO: Make this Navbar component reuseable (e.g., pass the socials as a prop, make fixed paddings configurable)
@@ -34,10 +34,10 @@ export default function Navbar() {
   }
 
   return (
-    <nav className='navbar container'>
-      <p className='navbar__logo heading-600'>assiduous</p>
+    <nav className="navbar container">
+      <p className="navbar__logo heading-600">assiduous</p>
 
-      <ul className='navbar__links' ref={navLinks}>
+      <ul className="navbar__links" ref={navLinks}>
         <li>
           <div ref={navLinksBg}></div>
         </li>
