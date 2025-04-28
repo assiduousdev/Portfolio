@@ -19,23 +19,23 @@ export default function Navbar() {
     }
   ];
 
-  function handleMouseOver(e) {
+  function handleMouseOverAndFocus(e) {
     const activeLink = e.currentTarget;
     const insetPadding = 16;
     const insetRight = navLinks.current.getBoundingClientRect().right - e.currentTarget.getBoundingClientRect().right - insetPadding;
     const insetLeft =  activeLink.getBoundingClientRect().left - navLinks.current.getBoundingClientRect().left - insetPadding;
     
     navLinksBg.current.classList.add("active");
-    navLinksBg.current.style = `inset: 7px ${insetRight}px 7px ${insetLeft}px;`;
+    navLinksBg.current.style = `inset: 5px ${insetRight}px 5px ${insetLeft}px;`;
   }
 
-  function handleMouseOut() {
+  function handleMouseOutAndBlur() {
     navLinksBg.current.classList.remove("active");
   }
 
   return (
     <nav className='navbar container'>
-      <p className='navbar__logo'>assiduous</p>
+      <p className='navbar__logo heading-600'>assiduous</p>
 
       <ul className='navbar__links' ref={navLinks}>
         <li>
@@ -45,11 +45,11 @@ export default function Navbar() {
         {
           socials.map((s) => (
             <li 
-              onMouseOver={handleMouseOver} 
-              onFocus={handleMouseOver} 
+              onMouseOver={handleMouseOverAndFocus} 
+              onFocus={handleMouseOverAndFocus} 
 
-              onMouseOut={handleMouseOut}
-              onBlur={handleMouseOut}
+              onMouseOut={handleMouseOutAndBlur}
+              onBlur={handleMouseOutAndBlur}
 
               key={s.label}
             >

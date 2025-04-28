@@ -2,6 +2,10 @@
   --teal: #7FFFE3;
   --light-teal: #F6FFFD;
   --black: #000000;
+
+  --ff-montserrat: "Montserrat", sans-serif; 
+  --ff-heading: var(--ff-montserrat);
+  --ff-body: "Hind", sans-serif;
 }
 
 *,
@@ -18,5 +22,15 @@ html {
 
 body {
   font-size: 1.8rem;
-  font-family: sans-serif;
+  font-family: var(--ff-body);
+}
+
+.heading-600 {
+  font-family: var(--ff-heading);
+  font-weight: 600;
+}
+
+.heading-800 {
+  font-family: var(--ff-heading);
+  font-weight: 800;
 }
