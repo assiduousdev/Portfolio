@@ -1,3 +1,9 @@
+:root {
+  --teal: #7FFFE3;
+  --light-teal: #F6FFFD;
+  --black: #000000;
+}
+
 *,
 *::before,
 *::after {
