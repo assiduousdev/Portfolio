@@ -23,7 +23,20 @@ html {
 body {
   font-size: 1.8rem;
   font-family: var(--ff-body);
-  background-color: var(--light-teal);
+  color: var(--body-color);
+  background-color: var(--body-bg);
+}
+
+body[data-theme="light"] {
+  --body-color: var(--black);
+  --body-bg: var(--light-teal);
+  --body-color-inverse: var(--light-teal); 
+}
+
+body[data-theme="dark"] {
+  --body-color: var(--light-teal);
+  --body-bg: var(--black);
+  --body-color-inverse: var(--black); 
 }
 
 .heading-600 {
