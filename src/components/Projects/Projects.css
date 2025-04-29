@@ -1,0 +1,13 @@
+
+.projects {
+  padding: 1.6rem 3.2rem;
+  min-height: 100rem;
+
+  background-color: var(--body-bg);
+}
+
+.projects h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--body-color);
+}

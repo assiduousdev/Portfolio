@@ -33,7 +33,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="navbar container">
+    <nav className="navbar">
       <p className="navbar__logo heading-600">assiduous</p>
 
       <ul className="navbar__links" ref={navLinks}>
