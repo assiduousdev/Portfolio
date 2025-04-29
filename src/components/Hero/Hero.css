@@ -20,6 +20,26 @@
   letter-spacing: 2px;
 }
 
+.hero h1 .word {
+  white-space: nowrap;
+}
+
+.hero h1 .char.animate {
+
+  display: inline-block;
+  transform-origin: bottom;
+
+  animation: up var(--length, 0) ease-in both;
+  animation-delay: var(--delay, 0);
+}
+
+@keyframes up {
+  from {
+    transform:  translateY(1.5rem);
+    opacity: 0;
+  }
+}
+
 .hero__card {
   display: flex;
   flex-direction: column;
