@@ -14,7 +14,7 @@ export default function Hero() {
 
         <div className="hero__card">
           <div className="hero__card-img">
-            <img src="/public/profile-picture.png" alt="Profile picture of Christian" />
+            <img src="/profile-picture.png" alt="Profile picture of Christian" />
           </div>
 
           <div className="hero__card-description">

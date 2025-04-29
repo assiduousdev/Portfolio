@@ -14,7 +14,7 @@
   max-width: 115rem;
   font-family: var(--ff-heading);
   font-weight: 800;
-  font-size: 4.2rem;
+  font-size: 4rem;
   text-align: center;
   line-height: 1.1;
   letter-spacing: 2px;
@@ -56,6 +56,12 @@
   font-family: var(--ff-body);
 }
 
+@media screen and (min-width: 37.5em) {
+  .hero h1 {
+    font-size: 5.4rem;
+  }
+}
+
 @media screen and (min-width: 43.75em) {
   .hero section {
     padding-inline: 6.4rem;
@@ -91,6 +97,10 @@
 @media screen and (min-width: 68.75em) {
   .hero h1 {
     font-size: 9.2rem;
+  }
+
+  .hero__card {
+    gap: 3.2rem;
   }
 
   .hero__card-description h2 {

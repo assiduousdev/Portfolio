@@ -21,9 +21,8 @@ export default function Navbar() {
 
   function handleMouseOverAndFocus(e) {
     const activeLink = e.currentTarget;
-    const insetPadding = 16;
-    const insetRight = navLinks.current.getBoundingClientRect().right - e.currentTarget.getBoundingClientRect().right - insetPadding;
-    const insetLeft =  activeLink.getBoundingClientRect().left - navLinks.current.getBoundingClientRect().left - insetPadding;
+    const insetRight = navLinks.current.getBoundingClientRect().right - e.currentTarget.getBoundingClientRect().right;
+    const insetLeft =  activeLink.getBoundingClientRect().left - navLinks.current.getBoundingClientRect().left;
     
     navLinksBg.current.classList.add("active");
     navLinksBg.current.style = `inset: 5px ${insetRight}px 5px ${insetLeft}px;`;
