@@ -25,11 +25,10 @@
 }
 
 .hero h1 .char.animate {
-
   display: inline-block;
   transform-origin: bottom;
 
-  animation: up var(--length, 0) ease-in both;
+  animation: up var(--length, 0) ease-out both;
   animation-delay: var(--delay, 0);
 }
 
@@ -54,6 +53,9 @@
 
   overflow: hidden;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+  animation: up var(--length, 0) ease-out both;
+  animation-delay: var(--delay, 0);
   aspect-ratio: 1;
 }
 
@@ -69,11 +71,17 @@
   font-family: var(--ff-heading);
   font-size: 2rem;
   font-weight: 600;
+
+  animation: up var(--length, 0) ease-out both;
+  animation-delay: var(--delay, 0);
 }
 
 .hero__card-description p {
   font-size: 1.4rem;
   font-family: var(--ff-body);
+
+  animation: up var(--length, 0) ease-out both;
+  animation-delay: var(--delay, 0);
 }
 
 @media screen and (min-width: 37.5em) {
