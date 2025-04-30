@@ -7,7 +7,7 @@ import "./Hero.css";
 export default function Hero() {
   const MAX_ANIMATION_LENGTH_IN_MILLISECONDS = 600;
 
-  const heading = "Transforming ideas into Impactful software";
+  const heading = "Transforming ideas into impactful software";
   const characters = heading.split("");
 
   const animationDelays = MAX_ANIMATION_LENGTH_IN_MILLISECONDS / characters.length; 
